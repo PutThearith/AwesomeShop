@@ -1,0 +1,477 @@
+
+
+/*My code*/
+
+@font-face {
+  src: url(./Baloo2-Bold.ttf);
+  font-family: Comfortaa;
+}
+
+* {
+  text-decoration: none;
+  color: #111;
+  font-family: Comfortaa;
+  margin: 0;
+  padding: 0;
+}
+.navigator {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+.title {
+  font-size: 3em;
+  text-align: center;
+  margin: 0;
+  grid-column: 1/3;
+}
+
+.navigator .title span {
+  color: rgb(18, 139, 58);
+}
+
+.nav {
+  font-size: 1.5em;
+  width: 100%;
+  text-align: center; 
+  border-bottom: 1px solid #111; 
+  border-top: 1px solid #111;   
+  border-left: 0.5px solid #111; 
+  background-color: rgb(235, 241, 241);
+}
+
+.feature {
+  margin: 0;
+  background-image: url("./Cloths-bc740630f228713e4bb0de8a7bffce22.png");
+  width: 100%;
+  height: 300px;
+  background-size: contain;
+}
+
+.feature h2 {
+  padding: 25px 0;
+  font-size: 2.5em;
+  text-align: center;
+  line-height: 1em;
+
+}
+
+.feature p {
+  font-size: 1.5em;
+  text-align: center;
+  line-height: 1em;
+  color: rgba(158, 158, 158, 0.993);
+  margin-bottom: 55px;
+}
+
+.feature .searchbox {
+  font-size: 1em;
+  text-align: center;
+  width: 80%;
+  margin: 5px auto;
+  margin: 0 auto;
+  line-height: 1em;
+  color: rgba(158, 158, 158, 0.993);
+  border: #111 solid 2px;
+  border-radius: 20px;
+}
+
+.feature img {
+  width: 13px;
+}
+
+.promotion {
+  display: grid;
+  width: 100%;
+  height: auto;
+}
+
+.promotion div {
+  width: 90%;
+  height: 120px;
+  margin: 5px 5%;
+  display: inline;
+}
+
+.promotion .container {
+  width: 65%;
+  float: left;
+  margin: 0;
+}
+
+.promotion img {
+  width: 100px;
+  float: right;
+  margin: 10px;
+}
+
+.promotion h3 {
+  font-size: 1.2em;
+  padding: 5px 0 0 5px;
+
+}
+.promotion h4 {
+  font-size: 1em;
+  padding: 0 0 0  5px;
+  line-height: 1em;
+}
+
+.promotion button {
+  width: 100px;
+  height: 25px;
+  margin: 10px auto auto 5px;
+
+}
+.promotion #coupon {
+  background-color: palevioletred;
+
+}
+.promotion #delivery {
+  background-color: rgb(202, 86, 43);
+}
+.promotion #voucher {
+  background-color: rgb(163, 64, 163);
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  border-bottom: #111 solid 1px;
+  border-top: #111 solid 1px;
+  margin: 10px;
+}
+
+.menu div {
+  margin: 0 auto;  
+  width: 100%; 
+}
+
+
+.menu div:hover {
+  background-color: rgb(243, 243, 243);
+  font-size: 1.2em;
+}
+
+.menu img {
+  width: 75px;
+  display: block;
+  height: 75px;
+  margin: 0 auto;
+  
+}
+.menu h4 {
+  text-align: center;
+  margin-top: -10px;
+  padding: 0;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: rgb(243, 243, 243);
+  margin: 10px;
+}
+
+
+.products .item {
+  width: 90%;
+  border: solid #111 1px;
+  margin: 5px auto;
+  display: block;
+  height: 98%;
+}
+
+.products .item .clothes {
+  width: 75%;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.item .discount{
+  text-align: center;
+  background-color:orange;
+  font-size: 1.2em;
+  width: 75px;
+  border-radius: 5px;
+  margin: 5px auto;
+  margin-top: 10px;
+}
+
+.item p {
+  font-size: 0.8em;
+  line-height: 1.2em;
+  padding: 5px;
+  display: block;
+  height: 50px;
+}
+
+.item h4{
+  display: block;
+  text-align: center;
+  width: 50%;
+  font-size: 1.2em;
+}
+
+.item .discounted-price {
+  float: right;
+  color: green;
+}
+
+.item .normal-price {
+  float: left;
+  color: red;
+  text-decoration: line-through;
+}
+
+.item .cart {
+  display: block;
+  width: 70%;
+  background-color: pink;
+  margin: 5px auto;
+  border: #111 solid 0.5px;
+  border-radius: 5px;
+  font-size: 1.1em;
+}
+
+.item .cart:hover {
+
+  background-color: palevioletred;
+}
+
+/* for Product screeen */
+
+.product {
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+}
+
+
+.product .item {
+  width: 90%;
+  border: solid #111 1px;
+  margin: 5px auto;
+  display: block;
+}
+
+.product .item .clothes {
+  width: 75%;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.product .item .discount{
+  text-align: center;
+  background-color:orange;
+  font-size: 1.2em;
+  width: 75px;
+  border-radius: 5px;
+  margin: 5px auto;
+  margin-top: 15px;
+}
+
+.product .item p {
+  font-size: 1.2em;
+  line-height: 1.5em;
+  padding: 10px 25px;
+}
+
+.product .item h4{
+  display: block;
+  text-align: center;
+  width: 50%;
+  font-size: 1.5em;
+  margin-top: 30px;
+}
+
+.product .item .discounted-price {
+  float: right;
+  color: green;
+}
+
+.product .item .normal-price {
+  float: left;
+  color: red;
+  text-decoration: line-through;
+}
+
+.product .item .cart {
+  display: block;
+  width: 70%;
+  background-color: pink;
+  margin: 5px auto;
+  border: #111 solid 0.5px;
+  border-radius: 5px;
+  font-size: 1.1em;
+}
+
+.product .item .cart:hover {
+
+  background-color: palevioletred;
+}
+
+.product .side-look {
+  display: inline-block;
+  width: 32%;
+}
+
+.product .comments{
+  width: 92%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+
+}
+
+.product .title{
+  padding-left: 20px;
+  font-size: 1.5em;
+  display: block;
+  margin-top: 20px;
+  text-align: left;
+}
+.product .comments .comment {
+  border: 3px solid #aaa7a7;
+  border-bottom: 1.5px solid #aaa7a7;
+  display: grid;
+  grid-template-rows: 55px 1fr;
+}
+.product .comments .comment .profile {
+  height: 50px;
+  margin: 5px;
+  display: block;
+}
+.profile img {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.profile .user-name {
+  width: calc(100% - 60px);
+  display: block;
+  float: right;
+margin-left: 10px;
+}
+.profile .user-name .username{
+  font-size: 1em;
+  color: rgb(12, 96, 124);
+}
+
+/*
+.product .comments .comment .profile img{
+  display: inline-block;
+  width: 40px;
+  border-radius: 50%;
+  margin: 5px;
+  margin-top: 20px;
+}
+.product .comments .comment .profile .user-name{
+  display: inline-block;
+  width: 200px;
+  height: 100%;
+  margin-right: 30px;
+  margin: 0;
+}
+
+.product .comments .comment .profile .user-name .date{
+  font-size: 0.8em;
+  display: block;
+  height: 50%;
+}
+*/
+
+.product .comments p{
+  font-size: 1em;
+  line-height: 1.1em;
+  margin: 10px 10px 20px 10px;
+  display: block;
+  height: fit-content;
+}
+
+.product .comments .comment-box {
+  width: 100%;
+  height: 100px;
+  border: 3px solid #111;
+  margin-top: 30px;
+}
+
+.product .type-comment button {
+  display: inline-block;
+  width: 40%;
+  text-align: center;
+  margin: 10px 5%;
+  font-size: 1.2em;
+}
+
+
+.product .type-comment #no {
+  float: right;
+}
+.product .type-comment #yes {
+  background-color: rgb(65, 177, 65);
+}
+
+/* Sign In */
+
+
+.text{
+  margin-top: 80px;
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form{
+  width: 350px;
+  background: #fff;
+  box-shadow: 0 5px 21px #d4d4d4;
+  padding: 20px;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+
+label{
+  position: relative;
+  display: block;
+}
+input{
+  width: 85%;
+  height: 50px;
+  padding: 0 20px;
+  font-size: 18px;
+  border-radius: 50px;
+  border: 0;
+  background-color: #e8eaf6;
+}
+strong{
+  margin: 5px;
+  display: block;
+}
+.container2 button {
+  display: inline-block;
+  width: 180px;
+  height: 50px;
+  line-height: 50px;
+  background-color: rgb(52, 165, 52);
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.no-account{
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.no-account a {
+  color: rgb(47, 165, 47);
+}
